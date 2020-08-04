@@ -1,3 +1,3 @@
-FROM devopsdockeruh/overwrite_cmd_exercise 
+FROM devopsdockeruh/heroku-example 
 WORKDIR /mydir  
 CMD ["/bin/bash"]
