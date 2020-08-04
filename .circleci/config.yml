@@ -27,8 +27,8 @@ jobs:
             command: |
               curl https://cli-assets.heroku.com/install.sh | sh
               docker login --username=mimatila --password=ollionparas70
-              docker build -t hero .
-              docker tag hero registry.heroku.com/hero/web
+              docker build -t mikaonhero .
+              docker tag mikaonhero registry.heroku.com/mikaonhero/web
               heroku container:login
-              docker push registry.heroku.com/hero/web
-              heroku container:release web -a hero
+              docker push registry.heroku.com/mikaonhero/web
+              heroku container:release web -a mikaonhero
