@@ -1,3 +1,5 @@
 FROM devopsdockeruh/heroku-example 
 WORKDIR /mydir  
-CMD ["/bin/bash"]
+CMD rails s -e production
+
+
