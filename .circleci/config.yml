@@ -25,7 +25,6 @@ jobs:
         - run:          
             #name: Build and push Docker image to Heroku
             command: |
-              pip install -r requirements.txt
               curl https://cli-assets.heroku.com/install.sh | sh
               docker login --username=mimatila --password=ollionparas70
               docker build -t mikaonhero .
