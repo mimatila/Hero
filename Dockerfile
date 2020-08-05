@@ -1,5 +1,5 @@
 FROM devopsdockeruh/heroku-example 
 WORKDIR /mydir  
-CMD rails s -e production
-
-
+RUN rm ./config/credentials.yml.enc
+RUN EDITOR=nano rails credentials:edit
+CMD ["rails", "s", "-e", "production"]
